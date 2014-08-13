@@ -37,7 +37,7 @@
     static SCSoundCloud *shared;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shared = [SCSoundCloud new];
+        shared = [[SCSoundCloud alloc] init];
     });
     return shared;
 }
